@@ -5,7 +5,8 @@ import '../../css/custom.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faCheckSquare, faFileText, faLaptop, faPlus} from '@fortawesome/free-solid-svg-icons'
-import {faGlobe} from '@fortawesome/free-solid-svg-icons'
+import { faGlobe } from '@fortawesome/free-solid-svg-icons'
+
 class Summary extends Component {
   render() {
     return (

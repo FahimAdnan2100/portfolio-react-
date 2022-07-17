@@ -16,14 +16,16 @@ export class TopNav extends Component {
           navBarTitle: 'navtitle',
           navBarLogo: [port],
           navBackgroundColor: 'navbackground',
-          menuItem:'menuitem',
+          menuItem: 'menuitem',
+          navVariant:'dark'
+          
         }
     }
     onScroll = () => {
         if (window.scrollY > 100) {
-            this.setState({navBarTitle:'navtitleScroll',navBackgroundColor:'navbackgroundscroll', menuItem:'menuitemscroll',})
+            this.setState({navBarTitle:'navtitleScroll',navBackgroundColor:'navbackgroundscroll', menuItem:'menuitemscroll',navVariant:'light'})
         } else if (window.scrollY < 100) {
-            this.setState({navBarTitle:'navtitle',navBackgroundColor:'navbackground', menuItem:'menuitem',})
+            this.setState({navBarTitle:'navtitle',navBackgroundColor:'navbackground', menuItem:'menuitem',navVariant:'dark'})
         }
     }
 
@@ -33,7 +35,7 @@ export class TopNav extends Component {
   render() {
     return (
         <Fragment>
-            <Navbar className={this.state.navBackgroundColor} collapseOnSelect fixed='top' expand="lg" variant="dark">
+            <Navbar className={this.state.navBackgroundColor} collapseOnSelect fixed='top' expand="lg" variant={this.state.navVariant}>
   <Container fluid>
             <Navbar.Brand className={this.state.navBarTitle} href="#home">PORTFOLIO
               

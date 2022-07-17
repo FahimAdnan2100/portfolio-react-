@@ -12,19 +12,22 @@ import Courses from './component/Courses/Courses';
 import Video from './component/Video/Video';
 import CReview from './component/Review/CReview';
 import AbouteMe from './component/AboutMe/AbouteMe';
+import Footer from './component/Footer/Footer';
 function App() {
   return (
     <div>
       <TopNav/>
       <Topbar />
-      <CReview/>
+      
       <Servies />
       <Analysis />
       <Summary />
       <RecentProjects />
       <Courses />
       <Video />
-      <AbouteMe/>
+      <CReview/>
+      <AbouteMe />
+      <Footer/>
       
     </div>
   );
